@@ -642,7 +642,7 @@ footer img:hover{
     background-color: #fff8f0;
 }
 
-/*para qu ela ultima fila no tenga borde inferior*/
+/*para que la ultima fila no tenga borde inferior*/
 .tabla-profesional tbody tr:last-child td{
     border-bottom: none;
 }
@@ -670,7 +670,6 @@ label {
     margin-top: 15px;
 }
 
-/* Corregido: margin: 15px auto */
 input, select, textarea, .boton-enviar {
     display: block;
     margin: 10px auto; 
@@ -679,13 +678,12 @@ input, select, textarea, .boton-enviar {
     padding: 30px;
     border: 2px solid #ccc;
     border-radius: 10px;
-    box-sizing: border-box; /* Importante para que el padding no agrande el cuadro */
+    box-sizing: border-box; 
     font-family: inherit;
     font-size: 20px;
     font-weight: bold;
 }
 
-/* Estilo específico para el cuadro de mensaje */
 textarea {
     resize: vertical; /* Permite agrandar hacia abajo pero no hacia los costados */
     font-size: 30px;
@@ -695,7 +693,7 @@ textarea {
     background-color: brown;
     color: white;
     border: none;
-    cursor: pointer; /* Cambiado de progress a pointer (la manito) */
+    cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
     margin-top: 25px;
@@ -703,5 +701,5 @@ textarea {
 
 .boton-enviar:hover {
     background-color: #5a0000;
-    transform: scale(1.02); /* Efecto de crecimiento sutil */
+    transform: scale(1.02); 
 }
