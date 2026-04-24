@@ -1,0 +1,707 @@
+/*CSS DATOS EN GENERAL*/
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden; /*evita el scroll horizontal innecesario*/
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 100vh;
+    height: 100vh;
+}
+/*EMPIEZA INDEX*/
+
+
+/*imagen*/
+.hero-section{
+    width: 100%; /*la foto ocupa todo*/
+    height: 100vh;
+    background-image: url('../img/paginaprincipal.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*centra verticalmente*/
+    align-items: center; /*centra horizontalmente*/
+}
+
+/*rectangulo*/
+.contenido-overlay{
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+/*link de presione aqui*/
+.contenido-overlay a{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.boton-entrada{
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.boton-entrada:hover{
+    color: white; /*efecto mouse*/
+}
+
+
+/*CURRICULUM*/
+
+/*cabecera y logo*/
+.navbar {
+    background: rgb(146, 91, 18);
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/*links*/
+.nav-links{
+        background: burlywood;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        list-style: none; /*los puntos*/
+        display: flex; /*los pone uno al lado del otro*/
+        flex-wrap: wrap; /*para que no se rompa en celulares*/
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;   
+        padding: 20px;
+        margin: 0; 
+}
+
+.nav-links a{
+    color: #750000; 
+    font-weight: bold;
+    font-size: 24px; /*tamaño intermedio*/
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px 20px;
+}
+
+.nav-links a:hover{
+    background-color: #5a0000;
+    color: white;
+    border-color: white;
+    transition: 0.3;
+}
+
+/*SOBRE MI*/
+
+.seccion-sobre-mi{
+    padding: 40px 20px;
+    width: 800px;
+    margin: 0; /*centra toda la seccion*/
+    text-align:center;
+}
+
+.titulo-seccion{
+    font-size: 45px;
+    color: black;
+    text-decoration: underline; /*el subrayado*/
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.seccion-sobre-mi p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    line-height: 1.5; /*mejora la lectura*/
+    margin-bottom: 15px; /*interlineado*/
+}
+
+
+/*lista*/
+.lista-aptitudes{
+    list-style: none; /*sacamos los puntos por defectp*/
+    padding: 0; /*quitamos espacio de fabrica*/
+    margin: 30px auto;
+    display: inline block; /*hace que el contenedor ocupe lo necesario*/
+    text-align: left; /*mantiene los items alineados a la ixquierda*/
+}
+
+.lista-aptitudes li {
+    font-size: 20px;
+    margin-bottom: 12px; /*separacion entre items*/
+    padding-left: 35px;
+    position: relative; /*punto personalizado*/
+    text-align: left;
+}
+
+
+.lista-aptitudes li::before{
+    content: "$"; /*pnt personalizado*/
+    color: brown;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+
+.campo{
+    margin-bottom: 15px;
+    text-align: left; /*alinea los labels a la izquierda*/
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.Formulario{
+    text-align: center;
+    text-decoration-line: none;
+    font-size: 30px;
+}
+
+label{
+    display:block; /*para poner el cuadro abajo*/
+    font-weight:bold; /*pone en negrita la letra*/
+    margin-bottom: 5px; /*espacio del cuadrado con el titulo*/
+    text-align: center;
+}
+
+input, select, .boton-enviar{
+    display: block;/*para que respete los margenes*/
+    margin: 15 auto; /*0arriba/abajo, auto a los costados los centra*/
+    width: 90%; /*largo del rectangulo */ 
+    max-width: 500px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.boton-enviar{
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: none;
+    cursor:progress; /*forma del cursor*/
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton-enviar:hover{
+    background-color: #750000; /*oscurece el boton cuando pasa el curso*/
+}
+.seccion-sobre-mi{
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto; /*centra toda la seccion*/
+    text-align:center;
+}
+
+.titulo-seccion{
+    font-size: 45px;
+    color: black;
+    text-decoration: underline; /*el subrayado*/
+    margin-bottom: 25px;
+}
+
+.seccion-sobre-mi p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    line-height: 1.5; /*mejora la lectura*/
+    margin-bottom: 15px; /*interlineado*/
+}
+
+
+/*lista*/
+.lista-aptitudes{
+    list-style: none; /*sacamos los puntos por defectp*/
+    padding: 0; /*quitamos espacio de fabrica*/
+    margin: 30px auto;
+    max-width: 400px;
+}
+
+.lista-aptitudes li {
+    font-size: 20px;
+    margin-bottom: 12px; /*separacion entre items*/
+    padding-left: 35px;
+    position: relative; /*punto personalizado*/
+    text-align: left;
+}
+
+
+.lista-aptitudes li::before{
+    content: "$"; /*pnt personalizado*/
+    color: brown;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+
+.campo{
+    margin-bottom: 15px;
+    text-align: left; /*alinea los labels a la izquierda*/
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*VER DE PONER ESTO EN OTRO DOCUMENTO*/
+
+.Formulario{
+    text-align: center;
+    text-decoration-line: none;
+    font-size: 30px;
+}
+
+label{
+    display:block; /*para poner el cuadro abajo*/
+    font-weight:bold; /*pone en negrita la letra*/
+    margin-bottom: 5px; /*espacio del cuadrado con el titulo*/
+    text-align: center;
+}
+
+input, select, .boton-enviar{
+    display: block;/*para que respete los margenes*/
+    margin: 15 auto; /*0arriba/abajo, auto a los costados los centra*/
+    width: 90%; /*largo del rectangulo */ 
+    max-width: 500px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.boton-enviar{
+    background-color: brown;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: none;
+    cursor:progress; /*forma del cursor*/
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton-enviar:hover{
+    background-color: #750000; /*oscurece el boton cuando pasa el curso*/
+    display: inline-block; /*hace que el padding y el borde se apliquen bien*/
+    border-radius:8px;
+    transition: 0.3;
+}
+
+.nav-links a:hover{
+    background-color: #750000;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+
+/*el cuerpo, foto y texto*/
+.cv-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/*foto mia*/
+.perfil-principal img.imagenmia {
+    width: 5    00px;
+    max-width: 350px; /*evita que sea gigante en monitores*/
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: 5px solid red;
+    padding: 10px;
+    border-radius: 1px;
+    margin-bottom: 50px;   
+    transition: 0.5s;
+}
+
+/* pie fotos de redes sociales*/
+.footer-sociales{
+    background-color: #750000;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*imagen de whatsapp*/
+footer img {
+    width: 50px;
+    height: auto;
+    margin-top: 0 10px;
+    transition: 0.3s;
+}
+
+footer img:hover{
+    transform: scale(2);
+}
+
+/*SOBRE MI*/
+/*titulo*/
+.seccion-sobre-mi{
+    padding: 40px 20px;
+    max-width: 800px;
+    margin-left:  auto;
+    margin-right: auto;
+    text-align:center;
+    width: 100%;
+}
+
+.titulo-seccion{
+    font-size: 45px;
+    color: black;
+    text-decoration: underline; /*el subrayado*/
+    margin-bottom: 25px;
+}
+
+.seccion-sobre-mi p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    line-height: 1.5; /*mejora la lectura*/
+    margin-bottom: 15px; /*interlineado*/
+}
+
+
+/*lista*/
+.lista-aptitudes{
+    list-style: none; /*sacamos los puntos por defectp*/
+    padding: 0; /*quitamos espacio de fabrica*/
+    margin: 30px auto;
+    max-width: 350px;
+    display: inline-block; /*hace que el bloque se comporte como texto para centrarse*/
+    text-align: left; /*deja el texto de los items a la izquierda*/
+}
+
+.lista-aptitudes li {
+    font-size: 30px;
+    margin-bottom: 12px; /*separacion entre items*/
+    padding-left: 35px;
+    position: relative; /*punto personalizado*/
+    text-align: left;
+}
+
+
+.lista-aptitudes li::before{
+    content: "$"; /*pnt personalizado*/
+    color: brown;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+
+.campo{
+    margin-bottom: 15px;
+    text-align: left; /*alinea los labels a la izquierda*/
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*Educacion*/
+.contenido-flexible{
+    display: flex; /*pone a los hijos en línea*/
+    justify-content: space-between; /*deja espacion entre la izquierda y derecha*/
+    align-items: flex-start; /*alinea los elementos arriba*/
+    gap: 40px; /*espacio de separacion entre las columnas*/
+    padding: 20px; 
+    max-width: 1000px; /*para que no se pegue a los bordes*/
+    margin: 0 auto; /*centra todo el bloque en la pagina*/
+}
+.contenido-flexible h3{
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+/*lista*/
+.lista-certificados{
+    list-style: none; /*sacamos los puntos por defectp*/
+    padding: 0; /*quitamos espacio de fabrica*/
+    margin: 30px auto;
+    max-width: 400px;
+}
+
+.lista-certificados li {
+    font-size: 25px;
+    margin-bottom: 12px; /*separacion entre items*/
+    padding-left: 35px;
+    position: relative; /*punto personalizado*/
+    text-align: left;
+}
+
+
+.lista-certificados li::before{
+    content: "&"; /*pnt personalizado*/
+    color: brown;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/*control del ancho de cada columna*/
+.columna-izquierda{
+    flex: 1; 
+    border: 2px solid red;
+}
+.columna-derecha{
+    flex: 2;
+    border: 2px solid blue;
+    text-align: center;
+}
+
+.columna-derecha p{
+    font-size: 20px;
+}
+
+.imagen-lateral{
+    width: 100%; /*se adapta al ancho de su columna*/
+    max-width: 600px; /*pero no debe crecer mas que esto*/
+    border-radius: 10px;
+}
+
+/*Cursos y Certificaciones*/
+.contenedor-tabla-superior{
+    width: 90%;
+    max-width: 880px;
+    margin: 0 auto 30px auto /*centra y da espacio abajo*/
+}
+
+.tabla-profesional{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border: 2px solid brown;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contenedor-imagenes-inferior{
+    display: flex; 
+    justify-content: center;
+    align-items: flex-end;
+    gap: 50px;
+    width: 100%;
+}
+
+.columna-certificado{
+    width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0,1);
+}
+
+.logo-edu{
+    width: 100px;
+    height: auto;
+}
+
+.epigrafe{
+    font-size: 12px;
+    color: black;
+    margin-top: 8px;
+    text-align: center;
+}
+
+/*Experiencia y Habilidades*/
+.seccion-experiencia{
+    max-width: 800px;
+    margin: 1000px auto; /*centra y da aire arriba y abajo*/
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0,1); /*sombra suave para que resalte*/
+}
+
+/*Titulo principal*/
+.seccion-experiencia h3{
+    color: brown;
+    text-align: center;
+    border-bottom: 5px solid brown;
+    font-size: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 25px; /*una especie de interlineado con el titulo grande y el de negrita
+    text-transform: uppercase; /*le da forma al titulo*/
+    letter-spacing: 1px;
+}
+
+.seccion-experiencia p strong{
+    font-size: 40px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.seccion-experiencia p{
+    font-size: 30px;
+}
+
+/*detalles en la fecha e institucion*/
+.seccion-experiencia p:nth-last-of-type(2){
+    color: #555;
+    font-style: italic; /*como una curisva*/
+    margin-bottom: 20px;
+    border-left: 4px solid brow; /*un detalle a la izqueirda*/
+    padding-left: 15px;
+}
+
+/*Lista*/
+.seccion-experiencia ul{
+    list-style: none; /*saca los puntos*/
+    padding: 0;
+    font-size: 30px;
+}
+
+.seccion-experiencia li:hover{
+    transform: translateX(10px); /*efecto cuando pasa el mouse*/
+    background-color: #fff5f5 /*color al pasar el mouse*/
+}
+
+/*marcadores antes de la lista*/
+.seccion-experiencia li::before{
+    content:"✔";
+    color: brown;
+    font-weight: bold;
+    margin-right: 15px;
+    font-size: 30px;
+}
+
+/*Idiomas*/
+.seccion-tabla-idiomas{
+    max-width: 700px; 
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contenedor-tabla{
+    overflow-x: auto; /*por si se ve en un celu chico*/
+}
+
+.tabla-profesional{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border: 2px solid brown;
+    border-radius: 10px;
+    overflow: hidden; /*para que funcionen las esquinas redondeadas*/
+    box-shadow: 0px 5px 15px rgba(0,0,0,0,1);
+}
+.titulo-centrado{
+    font-size: 35px;
+    text-align: center;
+}
+
+.tabla-profesional th{
+    background-color: brown;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 55px;
+}
+
+.tabla-profesional td{
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    font-size: 55px;
+}
+
+/*resalta la fila cuando pasa el mouse*/
+.tabla-profesional tbody tr:hover{
+    background-color: #fff8f0;
+}
+
+/*para qu ela ultima fila no tenga borde inferior*/
+.tabla-profesional tbody tr:last-child td{
+    border-bottom: none;
+}
+
+/*Contrato*/
+.Formulario {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 20px;
+    color: brown;
+}
+
+.seccion-formulario {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto; /* Centra el formulario en la pantalla */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+/* Corregido: margin: 15px auto */
+input, select, textarea, .boton-enviar {
+    display: block;
+    margin: 10px auto; 
+    width: 100%; 
+    max-width: 500px;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box; /* Importante para que el padding no agrande el cuadro */
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilo específico para el cuadro de mensaje */
+textarea {
+    resize: vertical; /* Permite agrandar hacia abajo pero no hacia los costados */
+    font-size: 30px;
+}
+
+.boton-enviar {
+    background-color: brown;
+    color: white;
+    border: none;
+    cursor: pointer; /* Cambiado de progress a pointer (la manito) */
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: 25px;
+}
+
+.boton-enviar:hover {
+    background-color: #5a0000;
+    transform: scale(1.02); /* Efecto de crecimiento sutil */
+}
